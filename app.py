@@ -3,8 +3,6 @@ import os
 import google.generativeai as genai
 from transformers import pipeline
 
-# load_dotenv()
-os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel('gemini-1.5-flash')
 
